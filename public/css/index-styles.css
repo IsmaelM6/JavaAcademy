@@ -1,0 +1,27 @@
+/* index-style.css */
+
+/* Hacer que html y body ocupen toda la altura del viewport */
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.container-main {
+    flex: 1;
+}
+
+
+.footer {
+    background-color: #343a40;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: auto;
+}

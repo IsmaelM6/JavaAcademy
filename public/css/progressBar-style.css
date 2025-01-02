@@ -1,0 +1,21 @@
+.progress-bar {
+    width: 0%;
+}
+.btn-module {
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    margin: 5px 0;
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    font-weight: bold;
+    text-decoration: none;
+}
+.btn-module.active {
+    background-color: #007bff; /* Color del botón activo */
+}
+.btn-module.inactive {
+    background-color: #6c757d; /* Color del botón inactivo */
+}

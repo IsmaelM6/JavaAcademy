@@ -1,0 +1,133 @@
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-image: url('../images/background.png');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.login-container {
+    width: 80%;
+    max-width: 900px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.login-box {
+    display: flex;
+    position: relative;
+}
+
+.login-left, .login-right {
+    padding: 20px;
+    flex: 1;
+    position: relative;
+}
+
+.login-left {
+    background-color: #fff;
+    text-align: center;
+}
+
+.login-left::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    width: 1px;
+    height: 80%;
+    background-color: #cecece;
+}
+
+.login-image {
+    max-width: 80%;
+    border-radius: 10px;
+    margin-left: 10px;
+    margin-top: 50px;
+    padding: 20px 20px;
+}
+
+.login-right {
+    position: relative;
+}
+
+.back-button {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    padding: 10px 20px;
+    background-color: #ffffff;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 50px;
+    border: 1px solid #ccc;
+    border-radius: 25px;
+    padding: 20px;
+    width: calc(100% - 40px);
+}
+
+.login-form h2 {
+    font-weight: bold;
+    margin-bottom: 10px;
+    font-size: 35px;
+}
+
+.login-form p {
+    margin-bottom: 20px;
+    font-size: 18px;
+}
+
+.login-form label {
+    margin-bottom: 5px;
+    font-size: 14px;
+}
+
+.login-form input {
+    width: 100%;
+    max-width: 300px;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 20px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    font-size: 14px;
+    margin-right: 15px;
+}
+
+.forgot-password {
+    color: rgb(93, 149, 212);
+    font-weight: bold;
+    text-decoration: none;
+    align-self: flex-end;
+    margin-bottom: 20px;
+}
+
+.login-button {
+    padding: 10px 20px;
+    background-color: #0066cc;
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    align-self: flex-start;
+}

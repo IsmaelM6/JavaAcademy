@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale="1.0">
+    <title>Recuperar Contraseña</title>
+    <link rel="stylesheet" href="../../public/css/recovery-style.css">
+</head>
+<body>
+    <div class="login-container">
+        <div class="login-box">
+            <div class="login-left">
+                <img src="../../public/images/logov2.png" alt="Logo" class="login-image">
+                <em>"Empoderando a la próxima generación de desarrolladores con conocimientos profundos en programación orientada a objetos en Java, a través de una educación innovadora y accesible".</em>
+            </div>
+            <div class="login-right">
+                <button class="back-button" onclick="window.location.href='login.html'">Volver</button>
+                <div class="login-form">
+                    <h2>¿Olvidó su contraseña?</h2>
+                    <p>Introduce tu dirección de correo electrónico para recibir instrucciones
+                        sobre el registro de tu nueva contraseña.
+                    </p>
+                    <p>
+                        Nota: El correo debe ser el mismo con el que ingresaste a la plataforma.
+                    </p>
+                    <form action="send_reset_email.php" method="post">
+                        <label for="email">Correo electrónico</label>
+                        <input type="email" id="email" name="email" placeholder="Ingrese su correo" required>
+                        <button type="submit" class="login-button">Enviar</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
